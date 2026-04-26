@@ -163,8 +163,8 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about/leadership" element={<Leadership />} />
             <Route path="/about/philosophy" element={<Philosophy />} />
-            <Route path="/Login" element={<LoginPage />} />
-            <Route path="/Contact" element={<Contact />} />
+            <R<Routeoute path="/Login" element={<LoginPage />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/benefits" element={<BenefitsPage />} />
             <Route path='/services/consumers' element={<Consumers />} />
             <Route path='/services/business' element={<Business />} />
@@ -175,13 +175,12 @@ function App() {
                 <Profile />
               </AuthRequiredRoute>
             } />
-            <Route path="/career" element={<Career />} />
+             path="/career" element={<Career />} />
             <Route path="/career/*" element={<Career />} />
-            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
-            <Route path='/carrer-privacy-policy' element={<CareersPrivacyPolicy />} />
-            <Route path="/community" element={
-              <CommunityPage />
-            } />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/career-privacy-policy" element={<CareersPrivacyPolicy />} />
+            <Route path="/carrer-privacy-policy" element={<Navigate to="/career-privacy-policy" replace />} />
+            <Route path="/community" element={<CommunityPage />} />
             <Route path='/california-privacy-policy' element={<CaliforniaPrivacyPolicy />} />
             <Route path='/eu-uk-jobs-privacy-policy' element={<EUUKPrivacyPolicy />} />
             <Route path='/delete-account' element={
